@@ -60,3 +60,27 @@ ul {
 li{
     margin-top: 15px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image-iut{
+    width: 50%;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+h2 + .title{
+    margin-top: 200px;
+}
+
+.title + h2{
+    margin-bottom: 200px;
+}
