@@ -17,6 +17,8 @@
             <li><a href="entreprise.html">Présentation de l'entreprise</a></li>
             <li><a href="wordpress.html">Refonte du site web</a></li>
             <li><a href="application.html">Application web</a></li>
+            <li><a href="bibliographie.html">Bibliographie</a></li>
+            <li><a href="annexes.html">Annexes</a></li>
         </ul>
     </nav>
 </header>
@@ -43,13 +45,38 @@
     
     <p>
         Il a tout d'abord fallu se concerter mutuellement avec Redouane afin de se mette d'accord sur la tournure de l'application.
+        Un cahier autre cahier des charges a donc été réalisé (annexe 3).
         Nous avons pris le temps de bien dialoguer pour débuter le projet dans de bonnes conditions.
+        <br>Voici un croquis de la structure que l'application va adopter :
+    </p>
+
+    <img src="IMG_20240815_0001.jpg">
+
+    <p>
+
     </p>
 
     <h3>
         Développement et réalisation
     </h3>
     <p>
+        Définition : "Un Ordre de fabrication (OF) autorise le lancement de la production d’une quantité d’un produit pour un délai donnée. 
+        L’OF autorise son ordonnancement et son exécution. Il peut être le lien entre une commande (ou demande d’approvisionnement) et la production de cette dernière." <a href="bibliographie.html">[Astrée]</a>
+        <br>
+        Pour pouvoir numériser le suivi d'ordre de fabrication, il faut connaître les différents champs qui le constituent.
+        <br>
+        <img src="20240627_104122.jpg" class="of-img">
+        Nous avons comme champs, le code ou le nom du produit, le numéro de l'OF, l'étape de production, l'heure de début, l'heure de fin, le nombre de produits réalisés, la cadence de la production, la complexité de la tâche, les difficultés rencontrées et les observations / remarques.
+        Chaque OF possède un QR code qui permet de l'identifier.
+        L'application permettra de scanner ce QR code pour pouvoir commencer la saisie des champs.
+        J'ai réfléchi à une automatisation de certains de ces champs (numéro de l'OF, heure de début, heure de fin, durée et cadence), pour simplifier la tâche.
+        Quand l'application scanne le QR code, l'heure de début est enregistrée ainsi que le numéro de l'OF.
+        S'ouvre ensuite une nouvelle page où l'employé doit sélectionner l'étape sur laquelle il va travailler.
+        L'application reste "en pause" le temps de ce travail.
+        Une fois la tâche terminée, l'utilisateur doit stopper l'OF sur l'application en cliquant sur le bouton stop.
+        Il est ensuite redirigé vers un formulaire pour saisir les différentes informations demandées.
+        A la validation de celui-ci, l'heure de fin est automatiquement enregistrée.
+
 
     </p>
 
