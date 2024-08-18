@@ -34,9 +34,9 @@
     </h3>
 
     <p>
-        Le but était de créer une application web pour la saisie des heures de travail des employés, facilitant la gestion et la génération de rapports sur les heures travaillées.
-        Anciennement, les heures étaient saisies manuscritement, ce qui engendrait une perte de temps dans la production.
-        Une saisie numérique peut permettre un gain de temps et d'avoir une meilleur visualisation des saisies des employés.
+        Le but était de permettre la saisie des heures de travail des employés ainsi que de faciliter la gestion et la génération de rapports sur les heures travaillées dans le cadre d'un ordre de fabrication (OF).
+        Anciennement, tout était saisi manuscritement, ce qui engendrait une perte de temps dans la production.
+        Une saisie numérique peut permettre un gain de temps et d'avoir une meilleure visualisation des saisies des employés.
     </p>
 
     <h3>
@@ -44,8 +44,8 @@
     </h3>
     
     <p>
-        Il a tout d'abord fallu se concerter mutuellement avec Redouane afin de se mette d'accord sur la tournure de l'application.
-        Un cahier autre cahier des charges a donc été réalisé (annexe 3).
+        Il a tout d'abord fallu se concerter mutuellement avec Redouane afin de se mettre d'accord sur la tournure de l'application.
+        Un autre cahier des charges a donc été réalisé (annexe 3).
         Nous avons pris le temps de bien dialoguer pour débuter le projet dans de bonnes conditions.
         <br>Voici un croquis de la structure que l'application va adopter :
     </p>
@@ -59,6 +59,13 @@
     <h3>
         Développement et réalisation
     </h3>
+
+    <p>
+        Chaque utilisateur de l'application (employés de production et administrateurs) doit se pouvoir se connecter avec un identifiant et un mot de passe.
+        Plusieurs utilisateurs peuvent se connecter simultanément et l'identification permet de connaître le rôle de chacun. 
+    </p>
+
+    <h4>Partie production</h4>
     <p>
         Définition : "Un Ordre de fabrication (OF) autorise le lancement de la production d’une quantité d’un produit pour un délai donnée. 
         L’OF autorise son ordonnancement et son exécution. Il peut être le lien entre une commande (ou demande d’approvisionnement) et la production de cette dernière." <a href="bibliographie.html">[Astrée]</a>
@@ -74,9 +81,29 @@
         S'ouvre ensuite une nouvelle page où l'employé doit sélectionner l'étape sur laquelle il va travailler.
         L'application reste "en pause" le temps de ce travail.
         Une fois la tâche terminée, l'utilisateur doit stopper l'OF sur l'application en cliquant sur le bouton stop.
-        Il est ensuite redirigé vers un formulaire pour saisir les différentes informations demandées.
-        A la validation de celui-ci, l'heure de fin est automatiquement enregistrée.
+        Il est ensuite redirigé vers un formulaire pour saisir les différentes informations demandées :
 
+        <ul>
+            <li>
+                le nombre de produits réalisés
+            </li>
+            <li>
+                la machine utilisée
+            </li>
+            <li>
+                la complexité de la mission (facultatif)
+            </li>
+            <li>
+                une descritpion ou un commentaire (facultatif)
+            </li>
+        </ul>
+        <br>
+        A la validation de celui-ci, l'heure de fin ainsi que la durée et la cadence sont automatiquement enregistrées.
+    </p>
+    <h4>
+        Partie administration
+    </h4>
+    <p>
 
     </p>
 
