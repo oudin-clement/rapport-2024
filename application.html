@@ -61,8 +61,8 @@
     </h3>
 
     <p>
-        Chaque utilisateur de l'application (employés de production et administrateurs) doit se pouvoir se connecter avec un identifiant et un mot de passe.
-        Plusieurs utilisateurs peuvent se connecter simultanément et l'identification permet de connaître le rôle de chacun. 
+        Chaque utilisateur de l'application (employés de production et administrateurs) doit pouvoir entrer un identifiant et un mot de passe.
+        Cela permet plusieurs connexions simultanées, tout en connaissnant le rôle de chacun grâce à l'identification. 
     </p>
 
     <h4>Partie production</h4>
@@ -80,7 +80,10 @@
         Quand l'application scanne le QR code, l'heure de début est enregistrée ainsi que le numéro de l'OF.
         S'ouvre ensuite une nouvelle page où l'employé doit sélectionner l'étape sur laquelle il va travailler.
         L'application reste "en pause" le temps de ce travail.
-        Une fois la tâche terminée, l'utilisateur doit stopper l'OF sur l'application en cliquant sur le bouton stop.
+        <br>En cas de problème (exemple : panne de machine), l'employé clique sur un bouton "aléa" ce qui ouvre un formulaire spécifique.
+        Il y précise la nature de la complication.
+        Ce n'est qu'une fois le problème résolu qu'il met fin à l'aléa, ce qui permet la réapparition de la page "OF en cours".
+        <br>Une fois la tâche terminée, l'utilisateur doit stopper l'OF sur l'application en cliquant sur le bouton stop.
         Il est ensuite redirigé vers un formulaire pour saisir les différentes informations demandées :
 
         <ul>
@@ -99,12 +102,18 @@
         </ul>
         <br>
         A la validation de celui-ci, l'heure de fin ainsi que la durée et la cadence sont automatiquement enregistrées.
+        Si un souci a eu lieu, le temps de résolution est décompté de la durée totale.
+        <br>
+
     </p>
     <h4>
         Partie administration
     </h4>
     <p>
-
+        Les administrateurs ont une page d'accueil différente de celle des employés de production. 
+        Celle-ci permet de visualiser tous les OF en cours d'exécution.
+        S'y trouve aussi deux boutons, "Visualiser salarié par période" et "Rechercher produit".
+        
     </p>
 
     <h3>
