@@ -121,3 +121,8 @@ h4{
 body{
     background-color: #eee;
 }
+
+p > img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
