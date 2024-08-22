@@ -51,6 +51,10 @@ nav ul li a {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+nav ul li::before{
+    content: "";
+}
+
 nav ul li a:hover {
     background-color: var(--accent-color);
     transform: translateY(-3px);
