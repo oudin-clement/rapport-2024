@@ -214,8 +214,8 @@ video {
     box-shadow: var(--box-shadow);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+
+@media (max-width: 820px) {
     nav ul li {
         display: block;
         margin: 10px 0;
