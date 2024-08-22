@@ -110,8 +110,17 @@ h3 {
     font-size: 3.2rem;
     text-align: center;
     margin: 80px 0;
+    margin-bottom: 500px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+h2 + .title{
+    margin-top: 200px;
+}
+
+.title + h2{
+    margin-bottom: 200px;
 }
 
 ul {
